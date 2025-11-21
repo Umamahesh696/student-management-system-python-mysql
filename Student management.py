@@ -27,7 +27,7 @@ def add_student():
 
     cursor.execute(query, data)
     con.commit()
-    print("\n✔ Student added successfully!\n")
+    print("\n Student added successfully!\n")
 
 
 def view_students():
@@ -50,7 +50,7 @@ def search_student():
         print("\nStudent Found:")
         print(f"Roll: {row[0]}, Name: {row[1]}, Branch: {row[2]}, Year: {row[3]}\n")
     else:
-        print("\n❌ No student found with that roll number.\n")
+        print("\n No student found with that roll number.\n")
 
 
 def update_student():
@@ -67,7 +67,7 @@ def update_student():
     cursor.execute(query, data)
     con.commit()
 
-    print("\n✔ Student updated successfully!\n")
+    print("\n Student updated successfully!\n")
 
 
 def delete_student():
@@ -76,7 +76,7 @@ def delete_student():
 
     cursor.execute(query, (roll,))
     con.commit()
-    print("\n✔ Student deleted successfully!\n")
+    print("\n Student deleted successfully!\n")
 
 
 def menu():
